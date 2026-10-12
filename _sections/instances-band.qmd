@@ -1,0 +1,7 @@
+::: {.instances-band}
+{{< include _generated/instances-band-media.qmd >}}
+
+::: {.instances-band__content}
+{{< include _generated/instances-band.qmd >}}
+:::
+:::

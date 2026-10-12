@@ -1,0 +1,43 @@
+{
+  "title": "SciLifeLab Training Webpage Template",
+  "upload_type": "software",
+  "description": "<p>A Quarto-based template for creating, publishing and maintaining FAIR, reusable training websites with GitHub Pages. A landing page lists all instances of a training, and each training instance has its own website with an overview, schedule, content pages, syllabus and information pages, generated from structured data files.</p>\n<p>Website: <a href=\"https://scilifelab-training.github.io/scilifelab-training-template/\">https://scilifelab-training.github.io/scilifelab-training-template/</a></p>",
+  "creators": [
+    {
+      "name": "Luijten, Ineke",
+      "affiliation": "SciLifeLab Training Hub",
+      "orcid": "0000-0001-5768-275X"
+    },
+    {
+      "name": "Norgren, Nina",
+      "affiliation": "SciLifeLab Training Hub",
+      "orcid": "0000-0002-3823-1555"
+    },
+    {
+      "name": "Panouris, Dimitris",
+      "affiliation": "SciLifeLab Training Hub",
+      "orcid": "0009-0005-2282-2982"
+    }
+  ],
+  "keywords": [
+    "training",
+    "training materials",
+    "course website",
+    "template",
+    "Quarto",
+    "GitHub Pages",
+    "FAIR",
+    "open educational resources"
+  ],
+  "license": "cc-by-4.0",
+  "access_right": "open",
+  "version": "1.0.0-alpha",
+  "language": "eng",
+  "related_identifiers": [
+    {
+      "identifier": "https://scilifelab-training.github.io/scilifelab-training-template/",
+      "relation": "isSupplementedBy",
+      "resource_type": "other"
+    }
+  ]
+}
