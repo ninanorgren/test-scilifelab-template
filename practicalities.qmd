@@ -1,0 +1,14 @@
+---
+title: Practicalities
+title-block: false
+---
+
+::: {.course-shell}
+
+{{< include _sections/navbar.qmd >}}
+
+{{< include _generated/practicalities.qmd >}}
+
+{{< include _sections/footer.qmd >}}
+
+:::

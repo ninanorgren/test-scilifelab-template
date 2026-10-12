@@ -1,0 +1,232 @@
+# This file contains the schedule for the training. Its data is used
+# to display the full schedule page and the upcoming section on the
+# overview page.
+#
+# Add one entry (= 1 event) for each session, break, or other scheduled part of the training.
+
+
+events:
+
+  # ==================================================
+  # Event fields
+  # ==================================================
+  #
+  # The schedule renderer expects the following fields for each event:
+  #
+  # - title: The event title displayed in the schedule.
+  # - type: The event type, used for its label and styling.
+  # - group: The day or group the event belongs to, e.g. "Day 1".
+  # - start: The event start date and time.
+  # - end: The event end date and time.
+  # - location: Where the event takes place. Use "" if not applicable.
+  # - people: Names of the people leading or contributing to the event.
+  #   Use [] if no names should be displayed.
+  #
+  # Optional field:
+  #
+  # - content: Path to a content page associated with the event.
+  #   Leave as "" if the event does not have an associated page.
+  #
+  # Note: The current validator checks that the file contains an
+  # "events" list. It does not validate the fields within each event.
+  #
+  # ==================================================
+  # Dates and times
+  # ==================================================
+  #
+  # Use the format YYYY-MM-DDTHH:MM, using the 24-hour clock.
+  # For example: 2026-09-30T09:00.
+  #
+  # ==================================================
+  # Event types
+  # ==================================================
+  #
+  # The event types below are supported by this template:
+  #
+  # lecture, workshop, practical, discussion, break, welcome, lunch,
+  # presentation, assessment, group-work, exercise, consultation,
+  # quiz, feedback, seminar
+  #
+  # Use the type exactly as written here, including hyphens where applicable.
+  #
+  # ==================================================
+  # Groups
+  # ==================================================
+  #
+  # Use the group field to organise events into days or other sections.
+  # Events with the same group are displayed together on the schedule page. 
+  #
+  # ==================================================
+  # Content links
+  # ==================================================
+  #
+  # To link an event title to a content page, provide the path to its
+  # .qmd file, relative to the root of the website.
+  # For example:
+  # "content/module-1/introduction.qmd"
+  #
+  # The website converts this path to a link to the rendered HTML page.
+  # Leave content as "" if the event does not have an associated page.
+
+
+  # ------------------------------------------------------------------
+  # DAY 1
+  # ------------------------------------------------------------------
+
+  - title: "How to structure a page"
+    type: lecture
+    group: "Day 1"
+    start: 2026-09-30T09:00:00
+    end: 2026-09-30T09:45:00
+    location: "SciLifeLab Solna"
+    people:
+      - Jane Doe
+    content: content/module-1/introduction.qmd
+
+  - title: "Headings and text"
+    type: lecture
+    group: "Day 1"
+    start: 2026-09-30T10:00:00
+    end: 2026-09-30T11:00:00
+    location: "Lecture Hall A"
+    people:
+      - John Smith
+    content: content/module-1/headings-and-text.qmd
+
+  - title: "Coffee Break"
+    type: break
+    group: "Day 1"
+    start: 2026-09-30T11:00:00
+    end: 2026-09-30T11:30:00
+    location: ""
+    people: []
+    content: ""
+
+  - title: "Lists and tables"
+    type: practical
+    group: "Day 1"
+    start: 2026-09-30T11:30:00
+    end: 2026-09-30T13:00:00
+    location: "Computer Lab"
+    people:
+      - Jane Doe
+      - Alex Johnson
+    content: content/module-1/lists-and-tables.qmd
+
+  - title: "Lunch"
+    type: break
+    group: "Day 1"
+    start: 2026-09-30T13:00:00
+    end: 2026-09-30T14:00:00
+    location: "SciLifeLab Café"
+    people: []
+    content: ""
+
+  - title: "Other content elements"
+    type: discussion
+    group: "Day 1"
+    start: 2026-09-30T14:00:00
+    end: 2026-09-30T15:00:00
+    location: "Seminar Room 2"
+    people:
+      - John Smith
+    content: content/module-1/other-content-elements.qmd
+
+
+  # ------------------------------------------------------------------
+  # DAY 2
+  # ------------------------------------------------------------------
+
+  - title: "How to highlight information"
+    type: lecture
+    group: "Day 2"
+    start: 2026-10-01T09:00:00
+    end: 2026-10-01T10:30:00
+    location: "Lecture Hall A"
+    people:
+      - Maria Andersson
+    content: content/module-2/introduction.qmd
+
+  - title: "Callout boxes"
+    type: practical
+    group: "Day 2"
+    start: 2026-10-01T10:45:00
+    end: 2026-10-01T12:30:00
+    location: "Computer Lab"
+    people:
+      - Maria Andersson
+      - Alex Johnson
+    content: content/module-2/callout-boxes.qmd
+
+  - title: "Collapsible callout boxes"
+    type: discussion
+    group: "Day 2"
+    start: 2026-10-01T14:00:00
+    end: 2026-10-01T15:00:00
+    location: "Auditorium"
+    people:
+      - Sarah Wilson
+    content: content/module-2/collapsible-boxes.qmd
+
+
+  # ------------------------------------------------------------------
+  # DAY 3
+  # ------------------------------------------------------------------
+
+  - title: "How to add media and interactive elements"
+    type: group-work
+    group: "Day 3"
+    start: 2026-10-02T09:00:00
+    end: 2026-10-02T12:00:00
+    location: ""
+    people: []
+    content: content/module-3/introduction.qmd
+
+  - title: "Links"
+    type: presentation
+    group: "Day 3"
+    start: 2026-10-02T13:00:00
+    end: 2026-10-02T15:30:00
+    location: "Auditorium"
+    people:
+      - Jane Doe
+    content: content/module-3/links.qmd
+
+
+  # ------------------------------------------------------------------
+  # LATER IN THE FUTURE
+  # ------------------------------------------------------------------
+
+  - title: "Images, presentations and videos"
+    type: workshop
+    group: "Day 4"
+    start: 2026-11-01T10:00:00
+    end: 2026-11-01T12:00:00
+    location: "Online"
+    people:
+      - John Smith
+    content: content/module-3/images-presentations-videos.qmd
+
+  - title: "Course Assessment"
+    type: assessment
+    group: "Day 4"
+    start: 2026-11-01T13:00:00
+    end: 2026-11-01T15:00:00
+    location: "Online"
+    people: []
+    content: ""
+
+  # ------------------------------------------------------------------
+  # FINAL MEETING
+  # ------------------------------------------------------------------
+
+  - title: "Final Course Meeting"
+    type: consultation
+    group: "Follow up"
+    start: 2026-12-03T14:00:00
+    end: 2026-12-03T15:00:00
+    location: "SciLifeLab Solna"
+    people:
+      - Jane Doe
+      - Maria Andersson
+    content: ""

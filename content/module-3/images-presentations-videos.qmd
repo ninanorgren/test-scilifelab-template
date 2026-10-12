@@ -1,0 +1,123 @@
+---
+title: "Images, presentations and videos"
+order: 3
+---
+
+Images, presentations, and videos can support explanations, illustrate concepts, and provide participants with additional ways to engage with your training content.
+
+Each example below shows the syntax and how the element appears when rendered.
+
+<br>
+
+## Adding images
+
+Use images to illustrate concepts, show examples, or provide visual guidance. Add descriptive text that will be displayed as a caption. You can also resize and align images.
+
+Place the image in the `docs` folder at the root of your training repository. From a page inside a module folder, use `../../docs/` followed by the image filename. Replace the example filename and text with your own.
+
+
+### Basic image
+
+**Markdown syntax**
+
+```markdown
+![A descriptive text explaining what the image shows](../../docs/example-image.svg)
+```
+
+**Rendered result**
+
+![A descriptive text explaining what the image shows](../../docs/example-image.svg)
+
+To remove the caption, simply remove the text between the brackets, for example: 
+
+```markdown
+![](../../docs/example-image.svg)
+```
+
+
+### Resizing an image
+
+You can set the width of an image using Quarto's `width` attribute. For example, use `width="10%"` to display the image at 10% of the available text width.
+
+**Markdown syntax**
+
+```markdown
+![A descriptive text explaining what the image shows](../../docs/example-image.svg){width="10%"}
+```
+
+**Rendered result**
+
+![A descriptive text explaining what the image shows](../../docs/example-image.svg){width="10%"}
+
+### Aligning an image
+
+You can align an image to the left, center, or right using Quarto's `fig-align` attribute.
+
+**Markdown syntax**
+
+```markdown
+![A descriptive text explaining what the image shows](../../docs/example-image.svg){fig-align="left"}
+```
+
+**Rendered result**
+
+![A descriptive text explaining what the image shows](../../docs/example-image.svg){fig-align="left"}
+
+
+
+## Embedding a presentation
+
+You can embed a presentation so participants can view it directly on the training page, rather than following a link to another website. Presentation platforms such as PowerPoint or Google Slides provide embed code that you can add to your page.
+
+For example, see [how to find the embed code in Google Slides](https://www.youtube.com/watch?v=1eE8qKv-98g&t=179s) (from 1:41).
+
+
+**HTML syntax**
+
+```html
+<iframe
+  src="PASTE-YOUR-PRESENTATION-EMBED-URL-HERE"
+  width="100%"
+  height="500"
+  frameborder="0"
+  allowfullscreen>
+</iframe>
+```
+
+**Rendered result**
+
+<iframe
+  src="https://docs.google.com/presentation/d/e/2PACX-1vT8uFNhgTk4ZlujF6smZlRgHIyyg8qlpW-R7athsi0xXtQXuE2ylE-CpE7vQzrR56hgFsl6WEz5uPcT/pubembed?start=false&loop=false&delayms=3000"
+  width="100%"
+  height="500"
+  frameborder="0"
+  allowfullscreen>
+</iframe>
+
+## Embedding videos
+
+You can add a video file to your training repository and display it with a video player. The `controls` attribute allows participants to play, pause, and adjust the volume.
+
+**HTML syntax**
+
+```html
+<video controls width="100%">
+  <source src="../../docs/example-video.mp4" type="video/mp4">
+  Your browser does not support the video element.
+</video>
+```
+
+**Rendered result**
+
+```{=html}
+<video controls width="100%">
+  <source src="../../docs/example-video.mp4" type="video/mp4">
+  Your browser does not support the video element.
+</video>
+```
+
+<br> 
+
+Place the video file in the `docs` folder at the root of your training repository. Replace the example filename with the name of your video file.
+
+You can also embed videos hosted on platforms such as YouTube or Vimeo. Use the embed code provided by the platform, in the same way as for presentations. For example, see  see [how to find the embed code for YouTube videos](https://www.youtube.com/watch?v=P6pFdeZg8LI) (from 0:18). 

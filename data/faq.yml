@@ -1,0 +1,34 @@
+faq:
+
+  # --------------------------------------------------
+  # Page introduction
+  # --------------------------------------------------
+
+  intro: >
+    Use this page to provide answers to common questions about the
+    training. Include information that participants may need before
+    or during the training.
+
+  # --------------------------------------------------
+  # Questions
+  # --------------------------------------------------
+  # Add one entry for each frequently asked question + answer.
+  #
+  # Keep questions specific and practical. Good FAQ topics may
+  # include registration, preparation, attendance, the schedule,
+  # technical requirements, certificates, or other common questions.
+
+
+  questions:
+
+    - question: "Example question 1"
+      answer: >
+        Provide the answer to the question here.
+
+    - question: "Example question 2"
+      answer: >
+        Provide the answer to the question here.
+
+    - question: "Example question 3"
+      answer: >
+        Provide the answer to the question here.

@@ -1,0 +1,14 @@
+---
+title: FAQ
+title-block: false
+---
+
+::: {.course-shell}
+
+{{< include _sections/navbar.qmd >}}
+
+{{< include _generated/faq.qmd >}}
+
+{{< include _sections/footer.qmd >}}
+
+:::

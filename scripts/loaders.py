@@ -1,0 +1,57 @@
+from pathlib import Path
+
+import yaml
+
+ROOT = Path(__file__).resolve().parents[1]
+DATA = ROOT / "data"
+
+
+def load_yaml(filename):
+    with open(DATA / filename, encoding="utf-8") as f:
+        return yaml.safe_load(f)
+
+
+def load_course():
+    return load_yaml("course.yml")["course"]
+
+
+def load_website():
+    return load_yaml("website.yml")["website"]
+
+
+def load_content():
+    return load_yaml("website.yml")["content"]
+
+
+def load_schedule():
+    return load_yaml("schedule.yml")["events"]
+
+
+def load_team():
+    data = load_yaml("team.yml") or {}
+    return data.get("team", {})
+
+
+def load_announcements():
+
+    with open("data/announcements.yml", encoding="utf-8") as f:
+        data = yaml.safe_load(f) or {}
+
+    return data.get("announcements", {})
+
+
+def load_practicalities():
+    data = load_yaml("practicalities.yml") or {}
+    return data.get("practicalities", {})
+
+def load_faq():
+    data = load_yaml("faq.yml") or {}
+    return data.get("faq", [])
+
+def load_preparation():
+    data = load_yaml("preparation.yml") or {}
+    return data.get("preparation", {})
+
+def load_resources():
+    data = load_yaml("resources.yml") or {}
+    return data.get("resources", {})

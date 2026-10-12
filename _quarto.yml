@@ -1,0 +1,35 @@
+project:
+
+  type: website
+  output-dir: _site
+
+  render:
+    - index.qmd
+    - schedule.qmd
+    - content/
+    - syllabus.qmd
+    - team.qmd
+    - practicalities.qmd
+    - resources.qmd
+    - preparation.qmd
+    - faq.qmd
+    - announcements.qmd
+
+  pre-render:
+    - python scripts/render_course.py
+    
+  resources:
+    - img
+    - js
+
+format:
+  html:
+    theme: cosmo
+    css: styles.css
+    favicon: img/scilifelab-logo-green.png
+    toc: false
+    page-layout: full
+    anchor-sections: false
+
+execute:
+  freeze: auto

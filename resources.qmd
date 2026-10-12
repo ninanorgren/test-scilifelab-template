@@ -1,0 +1,14 @@
+---
+title: Resources
+title-block: false
+---
+
+::: {.course-shell}
+
+{{< include _sections/navbar.qmd >}}
+
+{{< include _generated/resources.qmd >}}
+
+{{< include _sections/footer.qmd >}}
+
+:::

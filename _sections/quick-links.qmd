@@ -1,0 +1,1 @@
+{{< include _generated/quick_links.qmd >}}

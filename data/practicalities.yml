@@ -1,0 +1,127 @@
+practicalities:
+
+  # --------------------------------------------------
+  # Page introduction
+  # --------------------------------------------------
+
+  intro: >
+    Use this page to provide participants with practical information
+    they need before attending the training, including the venue,
+    transport, accommodation, food, and other useful details.
+
+  # --------------------------------------------------
+  # Venue
+  # --------------------------------------------------
+  #
+  # Information about where the training takes place.
+  # "map_url": 
+      # Create a map link using OpenStreetMap:
+      # 1. Go to https://www.openstreetmap.org/
+      # 2. Search for the venue address.
+      # 3. Zoom and centre the map on the correct location.
+      # 4. Select "Share" and copy the map URL.
+      # 5. Paste the URL below.
+
+  venue:
+    name: "Venue Name"
+    address: |
+      Street address 00
+      000 00 City
+      Sweden
+    room: "Room name or number"
+    instructions: >
+      Provide directions for finding the training room, including
+      the relevant entrance, floor, building, reception, or other
+      landmarks participants should know about.
+    map_url: "https://www.openstreetmap.org/?mlat=59.350162&mlon=18.022383#map=19/59.350162/18.022383"
+
+  # --------------------------------------------------
+  # Transport
+  # --------------------------------------------------
+  #
+  # Information about travelling to the venue.
+
+  transport:
+    description: >
+      Describe how participants can reach the venue using public
+      transport. Include the nearest station, stop, or other useful
+      information.
+
+    links:
+      - title: "Public transport website link"
+        url: "https://example.org"
+      - title: "Public transport app link"
+        url: "https://example.org"
+    
+    parking: >
+      Provide information about parking near the venue, including
+      availability, restrictions, fees, payment methods, or any
+      other information participants should know.
+
+  # --------------------------------------------------
+  # Accommodation
+  # --------------------------------------------------
+  # Information about accommodation near the training venue.
+  # Add one entry for each hotel or other accommodation option.
+  # Leave "url" empty if no website link should be displayed.
+
+  accommodation:
+    description: >
+      Provide information about accommodation near the venue.
+      You can list recommended hotels below, including their
+      approximate distance and walking time from the venue.
+    hotels:
+      - name: "Hotel name"
+        distance: "x meter"
+        walking_time: "x minutes"
+        url: "https://example.org"
+
+      - name: "Hotel name"
+        distance: "x km"
+        walking_time: "x min"
+        url: ""
+
+  # --------------------------------------------------
+  # Food
+  # --------------------------------------------------
+  #
+  # Information about meals and refreshments provided during
+  # the training, as well as dietary requirements.
+
+  food:
+    description: >
+      Describe what food and refreshments are provided during the
+      training, such as lunch, coffee, or other refreshments.
+
+    dietary_information: >
+      Provide information about dietary requirements, allergies,
+      or how participants should communicate special dietary needs.
+
+
+  # --------------------------------------------------
+  # Additional information
+  # --------------------------------------------------
+  #
+  # Practical information that does not fit naturally into the sections above.
+  # Add, remove, or rename entries as needed.
+
+  additional:
+    - title: "Example: What to bring"
+      content: >
+        List anything participants should bring with them, such as
+        a laptop, charger, identification, notebook, or other equipment.
+
+    - title: "Example: Wi-Fi"
+      content: >
+        Provide information about Wi-Fi access at the venue, including
+        the network name and any instructions participants need to follow.
+
+    - title: "Example: Accessibility"
+      content: >
+        Provide information about accessibility at the venue and any
+        arrangements participants should be aware of.
+
+    - title: "Other information"
+      content: >
+        Add any other practical information that participants should
+        know before attending the training.

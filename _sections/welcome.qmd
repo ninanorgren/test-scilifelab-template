@@ -1,0 +1,10 @@
+
+::: {.course-welcome}
+
+::: {.course-welcome-layout}
+
+{{< include _generated/welcome.qmd >}}
+
+:::
+
+:::

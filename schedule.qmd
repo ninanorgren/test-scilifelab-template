@@ -1,0 +1,19 @@
+---
+title: Schedule
+title-block: false
+anchor-sections: false
+
+include-in-header:
+  - text: |
+      <script src="js/schedule.js"></script>
+---
+
+::: {.course-shell}
+
+{{< include _sections/navbar.qmd >}}
+
+{{< include _generated/schedule.qmd >}}
+
+{{< include _sections/footer.qmd >}}
+
+:::

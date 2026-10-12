@@ -1,0 +1,265 @@
+course:
+
+  # This file contains training instance-specific information used
+  # throughout the website, including the syllabus.
+  #
+  # Some fields are required and some are optional,
+  # depending on the type and format of the training.
+  #
+  # The validator (validators.py) checks the required fields
+  # and stops the website from rendering if any required
+  # information is missing.
+
+  # ==================================================
+  # Required fields
+  # ==================================================
+  # title
+  # description
+  # mode
+  # location
+  # language
+  # target_audience
+  # learning_outcomes
+  # keywords
+  # organizers
+  # contact.email
+  # reuse.licence
+
+
+  # ==================================================
+  # Optional fields
+  # ==================================================
+  #
+  # The following fields can be omitted when they are not applicable to the training:
+  #
+  # subtitle
+  # start_date
+  # end_date
+  # duration
+  # instruction
+  # credits
+  # expertise_level
+  # prerequisites
+  # examination
+  # content_providers
+  # funding
+  # reuse.licence_url
+  # reuse.licence_id
+  # reuse.doi
+  # reuse.version_doi
+  # reuse.release_date
+  # reuse.version
+  # reuse.website_url
+  # reuse.zenodo_communities
+  # reuse.preferred_citation
+  #
+  # For example:
+  #
+  # - start_date and end_date can be omitted for training
+  #   without fixed dates, such as self-paced training.
+  #
+  # - duration can describe the expected workload for
+  #   self-paced training.
+  #
+  # - prerequisites can be omitted when there are no
+  #   specific prerequisites.
+  #
+  # - examination can be omitted when there is no formal
+  #   examination or assessment.
+
+
+  # --------------------------------------------------
+  # Identity
+  # --------------------------------------------------
+  #
+  # Basic information about the training.
+
+  title: "Training title"
+  subtitle: "Short subtitle describing the training."
+  description: >
+    Provide a short description of the training, including its main
+    topic, purpose, or focus.
+
+  credits:
+    value: numerical value
+    unit: "hp/ECTS"
+    note: "Provide the number of credits awarded (in ECTS/hp), if applicable.
+      Specify whether formal approval is determined by the participant's host university."
+
+  # --------------------------------------------------
+  # Delivery
+  # --------------------------------------------------
+  #
+  # Information about when, where, and how the training
+  # is delivered.
+  #
+  # Replace the placeholder dates with the actual training dates.
+  # Dates must use ISO format: YYYY-MM-DD.
+  start_date: "2026-01-01"
+  end_date: "2026-01-02"
+
+  duration: "Number of days"
+  mode: "Online / In-person / Hybrid"
+  instruction:
+    - "Describe the main teaching format or activity, e.g. Self-study"
+    - "Add another teaching format or activity, e.g. Online lectures"
+    - "Add another teaching format or activity, e.g. In-person workshop"
+    
+  # Location is required. For a self-paced or online training, 
+  # set location: "Online" instead of leaving it empty
+  location: "Venue name or online"
+
+  # The language of the training, e.g. "English" or "Swedish".
+  # For other languages, use the three-letter code from
+  # https://iso639-3.sil.org (e.g. "ita" for Italian).
+  language: "Language the training is provided in"
+
+  # --------------------------------------------------
+  # Educational information
+  # --------------------------------------------------
+  #
+  # Describes who the training is intended for, what
+  # participants need to know beforehand, and what they
+  # should learn from the training.
+
+  target_audience: "Describe the intended participant group"
+  expertise_level: "Beginner / Intermediate / Advanced"
+
+  prerequisites:
+    knowledge:
+      - "Describe a required knowledge prerequisite"
+      - "Add another knowledge prerequisite"
+    technical:
+      - "Describe a required technical prerequisite"
+      - "Add another technical prerequisite"
+
+  learning_outcomes:
+    - "Add a learning outcome"
+    - "Add another learning outcome"
+    - "Add another learning outcome"
+
+  keywords:
+    - "Keyword 1"
+    - "Keyword 2"
+    - "Keyword 3"
+
+  # --------------------------------------------------
+  # Examination and assessment
+  # --------------------------------------------------
+  #
+  # Describe how participants are assessed, if applicable.
+  # If the training does not include an examination or other
+  # formal assessment, this field can be left empty or removed.
+
+  examination:
+    description: >
+      Describe how participants will be assessed, if applicable.
+      Remove or leave this field empty if the training does not
+      include an examination or other assessment.
+
+  # --------------------------------------------------
+  # Administration
+  # --------------------------------------------------
+  #
+  # Organisations responsible for organising the training
+  organizers:
+    - "Name of organizing institution"
+    - "Add another organizing institution"
+
+  # Organisations providing educational content, if applicable. 
+  content_providers:
+    - "Name of institution providing content"
+    - "Name of another institution providing content"
+
+  # Organisations funding the training, if applicable. 
+  funding:
+    - funder: "Name of funding organisation"
+      grant_number: ""
+      grant_title: ""
+  
+  # --------------------------------------------------
+  # Contact
+  # --------------------------------------------------
+  #
+  # Main contact address for questions about the training.
+
+  contact:
+    email: "training@example.org"
+
+  # --------------------------------------------------
+  # Reuse, citation and DOI
+  # --------------------------------------------------
+  #
+  # This section describes how others may reuse and cite
+  # the training materials.
+  #
+  # It is used for the Syllabus page, the README, and the
+  # citation and archiving files that are created
+  # automatically (CITATION.cff and .zenodo.json).
+  #
+  # For a new training, you usually only need to check the
+  # licence. Leave all other fields empty: they are either
+  # filled in automatically, or only added after the
+  # training has been published on Zenodo.
+
+  reuse:
+
+    # Licence
+    # -------
+    # The licence that says how others may reuse the
+    # materials.
+    # "licence" is the name shown on the website, and
+    # "licence_url" is the page that explains the licence.
+    licence: "CC BY 4.0"
+    licence_url: "https://creativecommons.org/licenses/by/4.0/"
+
+    # Leave empty. Only needed if you use an unusual licence:
+    # then enter its short code from https://spdx.org/licenses/
+    licence_id: ""
+
+    # DOIs
+    # ----
+    # A DOI is a permanent link that makes the training
+    # citable. The DOIs are created by Zenodo when you
+    # publish a release of the training (see the README).
+    # Enter them like this: "10.5281/zenodo.1234567"
+    #
+    # doi: the DOI of the training as a whole. It stays the
+    # same for every time the training is given, and always
+    # points to the latest one. Add it after the very first
+    # release, and keep it when you create new instances.
+    doi: ""
+
+    # version_doi: the DOI of this specific instance (this
+    # time the training is given). Add it after publishing
+    # this instance. Empty it again when you copy this
+    # branch to create a new instance.
+    version_doi: ""
+    # release_date: the date this instance was published on
+    # Zenodo, written as YYYY-MM-DD (for example "2025-05-12").
+    # Add it together with version_doi, and empty it again
+    # when you copy this branch to create a new instance.
+    release_date: ""
+
+    # Optional fields
+    # ---------------
+    # Leave these empty unless you need them.
+
+    # The version of this instance. When empty, the year and
+    # month from the branch name are used (e.g. 2505).
+    version: ""
+
+    # The web address of this instance. When empty, it is
+    # worked out automatically. Only needed if the website
+    # uses its own domain name.
+    website_url: ""
+
+    # Zenodo communities the training should be listed in,
+    # for example: ["scilifelab"]
+    zenodo_communities: []
+
+    # How others should cite the training. When empty, a
+    # citation is created automatically from the team
+    # members, year, title, version and DOI. Only fill this
+    # in if you want a different citation.
+    preferred_citation: ""

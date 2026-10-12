@@ -1,0 +1,35 @@
+---
+title: Home
+title-block: false
+anchor-sections: false
+include-in-header:
+  - file: _generated/bioschemas.html
+  - text: |
+      <script src="js/schedule.js"></script>
+---
+
+::: {.course-shell}
+
+{{< include _sections/template-banner.qmd >}}
+
+{{< include _sections/navbar.qmd >}}
+
+{{< include _sections/welcome.qmd >}}
+
+{{< include _sections/registration.qmd >}}
+
+{{< include _sections/upcoming.qmd >}}
+
+{{< include _sections/quick-links.qmd >}}
+
+::: {.course-home-bottom}
+
+{{< include _sections/announcements.qmd >}}
+
+{{< include _sections/team-preview.qmd >}}
+
+::: 
+
+{{< include _sections/footer.qmd >}}
+
+:::
